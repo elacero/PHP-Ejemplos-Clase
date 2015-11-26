@@ -12,7 +12,9 @@
 </div>
 <div id ="menu">
 <a href='httpbasic.php'>Página protegida HTTP BASIC</a>
-<?php 
+<?php
+//******* NO FUNCIONA LAS VARIABLES DE SERVIDOR NO ESTAN DISPONIBLES
+//******* EN EL SCRIPT, SOLO ESTAN LAS DE SESIÓN
 var_dump($_SERVER['PHP_AUTH_USER']);
 if(!isset($_SERVER['PHP_AUTH_USER']))
 {

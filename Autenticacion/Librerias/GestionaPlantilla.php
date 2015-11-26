@@ -1,12 +1,19 @@
 <?php
+/**
+ * Esta versión de la librería si soporta sesiones en la creación de la plantilla
+ * En la versión del proyecto <ComoCrearMiPlantilla> no es soportada.
+ * @author antonio
+ *
+ */
 class GestionaPlantilla
 {
 	static $_varsget;
 	
 	public static function Inicio_Plantilla($plantilla)
 	{
+		//*** Para tener disponible la sesión en el script
+		//*** le paso las variables de sesión como parámetros
 		self::CreaVariablesSesion();
-		var_dump(session_id());
 		$aux=self::$_varsget;
 		exec("php -f $plantilla $aux > ./datos.txt");
 		ob_start("GestionaPlantilla::Render_Body");
@@ -23,6 +30,10 @@ class GestionaPlantilla
 		ob_flush();
 	}
 	
+	/**
+	 * Pasa las variables de sesión a una cadena con el formato
+	 * <nombrevariable> <valor> ...
+	 */
 	private static function  CreaVariablesSesion()
 	{
 		$vars=NULL;
