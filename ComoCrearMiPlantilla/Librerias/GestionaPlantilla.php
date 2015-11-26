@@ -17,8 +17,6 @@ class GestionaPlantilla
 	
 	public static function Fin_Plantilla()
 	{
-		//Borro fichero temporal
-		unlink("./datos.txt");
 		ob_flush();
 	}
 }
