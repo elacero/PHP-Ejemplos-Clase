@@ -1,5 +1,6 @@
 <?php
 require_once 'Librerias/GestionaPlantilla.php';
+session_start();
 GestionaPlantilla::Inicio_Plantilla("Plantilla/__PlantillaSESION.php");
 if(isset($_POST['usuario']))
 {
