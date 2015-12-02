@@ -16,7 +16,7 @@
 </header>
 <div id='cuerpo'>
 {{body}}
-Hola amigooooossss</div>
+Juan...Que buena fotografia has hecho.</div>
 <br>
 <h1><a href='vercodigo.php'>Ver código</a></h1>
 <footer>

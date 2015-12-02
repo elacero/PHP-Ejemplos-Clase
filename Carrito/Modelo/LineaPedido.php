@@ -1,19 +1,17 @@
 <?php
 /**
  * Clase que identifica la entidad Linea de Pedido
- * La clave primaria es múltiple $NumeroLinea+$IdFactura
  * @author antonio
  *
  */
 class LineaPedido
 {
-	/**
-	 * [key]
-	 */
+	//*********************** ACLARACIONES **********************
+	//La entidad LineaPedido cuando la persistamos en una base de datos relacional
+	//tendrá como clave primaria los campos $NumeroLinea e $IdFactura
+	//pero en mi carrito todavia no hemos facturado y cada linea queda identificada
+	//por su número de linea
 	public $NumeroLinea;
-	/**
-	 * [key]
-	 */
 	public $IdFactura;
 	public $IdProducto;
 	public $NombreProducto;

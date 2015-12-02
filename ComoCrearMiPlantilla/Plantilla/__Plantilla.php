@@ -16,7 +16,13 @@
 </header>
 <div id='cuerpo'>
 {{body}}
-<?php echo "Hola amigooooossss";?>
+<?php
+require_once 'Librerias/clase.php';
+$nuevo=new prueba();
+$nuevo->setNombre("Juan");
+echo $nuevo->getNombre();
+echo "...Que buena fotografia has hecho.";
+?>
 </div>
 <br>
 <h1><a href='vercodigo.php'>Ver código</a></h1>

@@ -14,7 +14,8 @@
 			<a href='sesion.php'>Página protegida con SESION</a>
 <a class='login' href='iniciarsesion.php'>Iniciar sesión</a></div>
 	</header>
-	<div id='cuerpo'>{{body}}</div>
+	<div id='cuerpo'>{{body}}
+	<br><h2>Probando el uso de código PHP en la plantilla</h2>Aquí esta el amigo Juan	</div>
 	<br>
 	<footer>
 		<div id="pie">

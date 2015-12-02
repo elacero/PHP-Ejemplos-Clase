@@ -26,7 +26,16 @@ if (! isset ( $_SESSION ['autenticacion'] )) {
 ?>
 </div>
 	</header>
-	<div id='cuerpo'>{{body}}</div>
+	<div id='cuerpo'>{{body}}
+	<?php
+	require_once 'Librerias/clase.php';
+	$objeto=new prueba();
+	$objeto->setNombre("Juan");
+	echo "<br>";
+	echo "<h2>Probando el uso de código PHP en la plantilla</h2>";
+	echo "Aquí esta el amigo ".$objeto->getNombre();
+	?>
+	</div>
 	<br>
 	<footer>
 		<div id="pie">
